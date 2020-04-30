@@ -1,0 +1,9 @@
+make
+valgrind --log-file=log \
+					--tool=memcheck \
+					--track-origins=yes \
+					--show-reachable=yes \
+					--show-leak-kinds=all \
+					--leak-check=full \
+					--verbose \
+					./main
