@@ -1,7 +1,7 @@
 .PHONY: all clean
 
 CC = gcc
-FLAGS = -ggdb3 -g -lm
+FLAGS = -ggdb3 -g -lm -fno-stack-protector
 
 SRCS = ${wildcard *.c}
 HEADERS = ${wildcard *.h}
